@@ -29,21 +29,26 @@ body{
  	margin: 0;
 }	
 header{
-	
+	top:0;
+	left:0;
+	position:fixed;
 	min-width:100%;
 	height:70px;
 	border-bottom:1px solid black;
 	margin:auto;
 	background-color:white;
-	box-shadow: 0px 5px 5px #888888;
+	/*box-shadow: 0px 5px 5px #888888;*/
 }
 #about_me{
 	width:100%;
 	border:1px solid transparent;
 	height:500px;
 	background-color:#23103C;
-	
+	color:white;
 	}
+#about_me p{
+	font-size:30px;
+}	
 #dream_website{
 	width:100%;
 	border:1px solid transparent;
@@ -60,6 +65,9 @@ header{
     background: linear-gradient(45deg, #020031 0%,#6d3353 100%);
      
 }
+h1{
+	font-size:50px;
+}
 </style>	
 
 </head>
@@ -70,7 +78,7 @@ header{
 	</header>
 	
 	
-	<div id="whoim" style="width:100%;border:1px solid transparent;height:auto">
+	<div id="whoim" style="width:100%;border:1px solid transparent;height:auto;margin-top:70px">
 			<h1 style="text-align:center;font-size:50px;margin-top:20px;color:white">Hello World!</h1>
 
 	<p style="text-align:center;margin-top:30px;margin-bottom:40px"><img id="mainmain" src="me1.png"></p>
@@ -80,7 +88,15 @@ header{
 	<h1 style="font-size:50px;margin-top:50px;margin-bottom:50px">I can make your dream website come true.</h1>
 	</div>
 
-<div id="about_me"></div>
+<div id="about_me">
+	<div class="container" style="margin-top:50px">
+  		<h1 style="text-align:center">About Me</h1>
+  			<p style="margin-top:50px">I live in LA</p> 
+  			<p>I speak English & Spanish</p> 
+  			<p>I'm a full-time Software Programmer</p> 
+  			<p>My passion is to create beautiful mobile-friendly Websites and Apps</p> 
+	</div>
+</div>
 
 
 
