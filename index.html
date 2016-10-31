@@ -16,7 +16,7 @@
 	<style>
 	
 #krakenimg{
-	max-width:50%;
+	max-width:200px;
 }
 #mainmain{
 	max-width:300px;
@@ -68,13 +68,25 @@ header{
 h1{
 	font-size:50px;
 }
+
+@media only screen and (max-width: 800px) {
+
+	#header_options{
+	display:none;
+	}
+	#p_image{
+		text-align:center !important;
+		float:none !important;
+	}
+}
+
 </style>	
 
 </head>
 <body>
 	
 	<header>
-		<p style="text-align:left;color:white;float:left;margin-top:5px;font-size:40px;margin-left:20px"><img id="krakenimg" src="KraKen_76fec_450x450.png"></p><p style="text-align:right;color:black;font-size:17px;margin-right:20px;margin-top:20px;letter-spacing: 0.15em;float:right;cursor:pointer">About Me &nbsp;&nbsp;&nbsp; Work &nbsp;&nbsp;&nbsp;Contact</p>
+		<p id="p_image" style="text-align:left;color:white;float:left;margin-top:5px;font-size:40px;margin-left:20px"><img id="krakenimg" src="KraKen_76fec_450x450.png"></p><p style="text-align:right;color:black;font-size:17px;margin-right:20px;margin-top:20px;letter-spacing: 0.15em;float:right;cursor:pointer" id="header_options">About Me &nbsp;&nbsp;&nbsp; Work &nbsp;&nbsp;&nbsp;Contact</p>
 	</header>
 	
 	
