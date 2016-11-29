@@ -12,13 +12,24 @@
 
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<!--
+
 <script>
-	$(document).ready(function(){
-    $(this).scrollTop(0);
+$(document).ready(function(){
+
+	$(".spanish").hide();
+
+	$(".toSpanish").click(function(){
+        $(".spanish").show();
+        $(".english").hide();
+    });
+
+	$(".toEnglish").click(function(){
+        $(".english").show();
+        $(".spanish").hide();
+    });
+
 });
 </script>
--->
 
 <style>	
 #price_box{
@@ -193,70 +204,73 @@ a:active  {color:black; background-color:transparent; text-decoration:none}
 }
 </style>	
 
+
+
 </head>
 <body>
 	
 <header id="header">
-	<p id="p_image" style="text-align:left;color:white;float:left;margin-top:5px;font-size:40px;margin-left:20px"><img id="krakenimg" src="KraKen_76fec_450x450.png"></p><span id="menu_mobile" class="glyphicon glyphicon-menu-hamburger" style="float:right;font-size:45px;margin-top:-62px;margin-right:10px"></span><p style="text-align:right;color:black;font-size:17px;margin-right:20px;margin-top:20px;letter-spacing: 0.15em;float:right;cursor:pointer" id="header_options"><a href="http://www.purplekrakentechnologies.com" target="_top">Home</a> &nbsp;&nbsp;&nbsp; <a href="http://www.purplekrakentechnologies.com/#prices">Prices</a> &nbsp;&nbsp;&nbsp;<a href="http://www.purplekrakentechnologies.com/#contact">Contact</a> &nbsp;&nbsp;&nbsp; Espa&ntilde;ol</p>
+	<p id="p_image" style="text-align:left;color:white;float:left;margin-top:5px;font-size:40px;margin-left:20px"><img id="krakenimg" src="KraKen_76fec_450x450.png"></p><span id="menu_mobile" class="glyphicon glyphicon-menu-hamburger" style="float:right;font-size:45px;margin-top:-62px;margin-right:10px"></span><p style="text-align:right;color:black;font-size:17px;margin-right:20px;margin-top:20px;letter-spacing: 0.15em;float:right;cursor:pointer" id="header_options"><a href="http://www.purplekrakentechnologies.com" target="_top"><span class="english">Home</span><span class="spanish">Inicio</span></a> &nbsp;&nbsp;&nbsp; <a href="http://www.purplekrakentechnologies.com/#prices"><span class="english">Prices</span><span class="spanish">Precios</span></a> &nbsp;&nbsp;&nbsp;<a href="http://www.purplekrakentechnologies.com/#contact"><span class="english">Contact</span><span class="spanish">Contactame</span></a> &nbsp;&nbsp;&nbsp; <span class="toSpanish english">Espa&ntilde;ol</span><span class="toEnglish spanish">English</span></p>
 </header>
 	
 <div id="whoim" style="width:100%;border:1px solid transparent;height:auto;margin-top:70px">
-	<h1 style="text-align:center;font-size:50px;margin-top:20px;color:white">Hello World!</h1>
+	<h1 style="text-align:center;font-size:50px;margin-top:20px;color:white"><span class="english">Hello World!</span><span class="spanish">Hola Mundo!</span></h1>
 	<p style="text-align:center;margin-top:30px;margin-bottom:40px"><img id="mainmain" src="beardglasses.jpg" style="border-radius:100%"></p>
 </div>
 
 <div id="passion">
-	<h1 style="font-size:50px;margin-top:50px;margin-bottom:50px">I'm Mitchell Garcia a bilingual Programmer based in LA</h1>
+	<h1 style="font-size:50px;margin-top:50px;margin-bottom:50px"><span class="english">I'm Mitchell Garcia a bilingual Programmer based in LA</span><span class="spanish">Hola, soy Mitchell Garcia un Programador que vive en LA</span></h1>
 </div>
 
 <div id="dream_website">
-	<h1 style="font-size:50px;margin-top:80px;margin-bottom:50px">Let's start building your dream website</h1>
+	<h1 style="font-size:50px;margin-top:80px;margin-bottom:50px"><span class="english">Let's start building your dream website</span><span class="spanish">Hay que empezar a trabajar en tu pagina</span></h1>
 	<p style="text-align:center;margin-bottom:-1px"><img id="rocket" src="desktop.jpg" style="width:900px"></p>
 </div>
 
 <div id="what_i_do">
-	<h1 style="font-size:50px;margin-top:80px;margin-bottom:50px">What I would do for your website</h1>
+	<h1 style="font-size:50px;margin-top:80px;margin-bottom:50px"><span class="english">What I would do for your website</span><span class="spanish">Lo que hare para hacer tu pagina unica</span></h1>
 	<p style="text-align:center;margin-bottom:100px"><img id="developing" src="developing.jpg" style="width:900px"></p>
 </div>
 
 <div id="about_me">
 	<div class="container" style="margin-top:50px;margin-bottom:50px">
-  	<h1 style="text-align:center">Developing modern websites is my passion</h1>	
+  	<h1 style="text-align:center"><span class="english">Developing modern websites is my passion</span><span class="spanish">Mi pasion es crear las paginas mas modernas</span></h1>	
 	</div>
 </div>
 
 <div id="languages">
-  	<h1 style="text-align:center;margin-top:80px">UI Technologies Used</h1>
+  	<h1 style="text-align:center;margin-top:80px"><span class="english">UI Technologies Used</span><span class="spanish">Las tecnologias que uso</span></h1>
   	<p style="text-align:center;margin-top:50px;margin-bottom:80px"><img id="languagesimg" src="html-css-js.png" style="max-width:700px"></p> 
 </div>
 
 <div id="mobile_friendly">
-  	<h1 style="text-align:center;margin-top:80px;color:black">All websites are Mobile-Friendly</h1>
+  	<h1 style="text-align:center;margin-top:80px;color:black"><span class="english">All websites are Mobile-Friendly</span><span class="spanish">Se miran en computadoras, tabletas y celulares</span></h1>
   	<p style="text-align:center;margin-top:50px;margin-bottom:-1px"><img src="mobile-friendly.png" style="max-width:100%"></p> 
 </div>
 
 <div id="bilingual">
-  	<h1 style="text-align:center;margin-top:70px;color:black">All websites are Bilingual</h1>
+  	<h1 style="text-align:center;margin-top:70px;color:black"><span class="english">All websites are Bilingual</span><span class="spanish">Las paginas tienen dos idiomas, Ingles y Espa&ntilde;ol</span></h1>
 
 	<div class="container text-center" style="margin-bottom:150px">
-	<h1><small>Click button to translate website</small></h1>
-	<button type="button" class="btn btn-primary btn-lg" style="margin-top:55px">Espa&ntilde;ol</button>
+	<h1><small><span class="english">Click button to translate website</span><span class="spanish">Preciona el boton para traducir la pagina</span></small></h1>
+	<button type="button" class="btn btn-primary btn-lg toSpanish english" style="margin-top:55px">Espa&ntilde;ol</button>
+	<button type="button" class="btn btn-primary btn-lg toEnglish spanish" style="margin-top:55px">English</button>
 	</div>
 </div>
 
 <div id="prices">
 	<div class="container text-center">
-  	<h1 style="margin-top:70px;color:white">Prices</h1>
+  	<h1 style="margin-top:70px;color:white"><span class="english">Prices</span><span class="spanish">Precios</span></h1>
 
 	  <div id="price_box">
-		  <h2 style="margin-top:50px">Starting</h2>
+		  <h2 style="margin-top:50px"><span class="english">Starting</span><span class="spanish">Empezando desde</span></h2>
 		  <p style="font-size:115px;font-weight:100;color:#0C1F28"><span style="font-size:50px;position:absolute;margin-top:30px;margin-left:-30px">$</span>350</p>
-		  <div style="width:101%;height:50px;border:1px solid #F1F4F5;margin-left:-1px;background-color:#F1F4F5"><p style="margin-top:10px;font-size:20px"><strong>1-3 Pages</strong></p></div>
-		  <p style="margin-top:10px;font-size:20px;font-weight:bold;margin-top:15px"><strong>Mobile-Friendly</strong></p>
-		  <div style="width:101%;height:50px;border:1px solid #F1F4F5;margin-left:-1px;background-color:#F1F4F5"><p style="margin-top:10px;font-size:20px"><strong>Bilingual</strong></p></div>
-		  <p style="margin-top:10px;font-size:20px;font-weight:bold;margin-top:15px"><strong>Customized Content</strong></p>
-		  <div style="width:101%;height:50px;border:1px solid #F1F4F5;margin-left:-1px;background-color:#F1F4F5"><p style="margin-top:10px;font-size:20px"><strong>Hosting</strong></p></div>
-		  <p style="margin-top:10px;font-size:20px;font-weight:bold;margin-top:15px"><strong>Latest UI Technologies</strong></p>
+		  <div style="width:101%;height:50px;border:1px solid #F1F4F5;margin-left:-1px;background-color:#F1F4F5"><p style="margin-top:10px;font-size:20px"><strong><span class="english">1-3 Pages</span><span class="spanish">1-3 Paginas</span></strong></p></div>
+		  <p style="margin-top:10px;font-size:20px;font-weight:bold;margin-top:15px"><strong><span class="english">Mobile-Friendly</span><span class="spanish">Para computadoras, tabletas y celulares</span></strong></p>
+		  <div style="width:101%;height:50px;border:1px solid #F1F4F5;margin-left:-1px;background-color:#F1F4F5"><p style="margin-top:10px;font-size:20px"><strong><span class="english">Bilingual</span><span class="spanish">En Ingles y Espa&ntilde;ol</span></strong></p></div>
+		  <p style="margin-top:10px;font-size:20px;font-weight:bold;margin-top:15px"><strong><span class="english">Customized Content</span><span class="spanish">Con el contenido que usted quiera</span></strong></p>
+		  <div style="width:101%;height:50px;border:1px solid #F1F4F5;margin-left:-1px;background-color:#F1F4F5"><p style="margin-top:10px;font-size:20px"><strong><span class="english">Hosting</span><span class="spanish">Hospedaje de pagina</span></strong></p></div>
+		  <p style="margin-top:10px;font-size:20px;font-weight:bold;margin-top:15px"><strong><span class="english">Latest UI Technologies</span><span class="spanish">Lo ultimo en tecnologia</span></strong></p>
 		  <div style="width:101%;height:105px;border:1px solid #0C1F28;margin-left:-1px;background-color:#0C1F28"><img src="whitekraken.png" style="width:85px;margin-top:10px"></img></div>		  
 	  </div>
 	</div>
@@ -265,20 +279,20 @@ a:active  {color:black; background-color:transparent; text-decoration:none}
 
 <div id="contact">
 	<div class="container" style="margin-bottom:80px">
-		<h1 style="margin-top:70px;text-align:center">Contact</h1>
+		<h1 style="margin-top:70px;text-align:center"><span class="english">Contact</span><span class="spanish">Contactame</span></h1>
 		<h4 style="text-align:center;color:indigo">purplekrakentechnologies@gmail.com</h4>
 		<br>
 		<form action="https://formspree.io/purplekrakentechnologies@gmail.com" method="POST">
   		<div class="form-group">
-  		<label>Your Name:</label>
+  		<label><span class="english">Your Name:</span><span class="spanish">Tu Nombre:</span></label>
 		<input type="text" name="name" class="form-control" style="width:300px">
   		</div>
 		<div class="form-group">
-  		<label>Your Email:</label>
+  		<label><span class="english">Your Email:</span><span class="spanish">Tu Correo Electronico:</span></label>
 		<input type="email" name="email" class="form-control" style="width:300px">
 		</div>
 		<div class="form-group">
- 		<label>Your Message:</label>
+ 		<label><span class="english">Your Message:</span><span class="spanish">Tu Mensaje:</span></label>
   		<textarea class="form-control" rows="5" name="message"></textarea>
 		</div>
 		<input type="submit" value="Send" class="btn btn-default">
