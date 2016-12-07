@@ -129,7 +129,11 @@ header{
     background: -o-linear-gradient(45deg, #020031 0%,#6d3353 100%);
     background: -ms-linear-gradient(45deg, #020031 0%,#6d3353 100%);
     background: linear-gradient(45deg, #020031 0%,#6d3353 100%);
-     
+	width:100%;
+	border:1px solid transparent;
+	height:auto;
+	margin-top:70px;
+	margin-left:-1px;
 }
 h1{
 	font-size:50px;
@@ -152,6 +156,14 @@ a:active  {color:black; background-color:transparent; text-decoration:none}
 #menu_mobile{
 	display:none;
 }
+#p_image{
+	text-align:left;
+	color:white;
+	float:left;
+	margin-top:5px;
+	font-size:40px;
+	margin-left:20px;	
+	}
 
 @media only screen and (max-width: 1000px) {
 	#developing{
@@ -176,6 +188,10 @@ a:active  {color:black; background-color:transparent; text-decoration:none}
 
 	#header_options{
 	display:none;
+	float:right;
+	font-size:30px;
+	margin-top:-55px;
+	margin-right:10px;
 	}
 	#p_image{
 		text-align:center !important;
@@ -196,10 +212,10 @@ a:active  {color:black; background-color:transparent; text-decoration:none}
 <body>
 	
 <header id="header">
-	<p id="p_image" style="text-align:left;color:white;float:left;margin-top:5px;font-size:40px;margin-left:20px"><img id="krakenimg" src="KraKen_76fec_450x450.png"></p><span id="menu_mobile" class="glyphicon glyphicon-menu-hamburger" style="float:right;font-size:30px;margin-top:-55px;margin-right:10px"></span><p style="text-align:right;color:black;font-size:17px;margin-right:20px;margin-top:20px;letter-spacing: 0.15em;float:right;cursor:pointer" id="header_options"><a href="http://www.purplekrakentechnologies.com"><span class="english home">Home</span><span class="spanish home">Inicio</span></a> &nbsp;&nbsp;&nbsp; <a href="http://www.purplekrakentechnologies.com/#prices"><span class="english">Prices</span><span class="spanish">Precios</span></a> &nbsp;&nbsp;&nbsp;<a href="http://www.purplekrakentechnologies.com/#contact"><span class="english">Contact</span><span class="spanish">Contactame</span></a> &nbsp;&nbsp;&nbsp; <span class="toSpanish english">Espa&ntilde;ol</span><span class="toEnglish spanish">English</span></p>
+	<p id="p_image"><img id="krakenimg" src="KraKen_76fec_450x450.png"></p><span id="menu_mobile" class="glyphicon glyphicon-menu-hamburger" style=""></span><p style="text-align:right;color:black;font-size:17px;margin-right:20px;margin-top:20px;letter-spacing: 0.15em;float:right;cursor:pointer" id="header_options"><a href="http://www.purplekrakentechnologies.com"><span class="english home">Home</span><span class="spanish home">Inicio</span></a> &nbsp;&nbsp;&nbsp; <a href="http://www.purplekrakentechnologies.com/#prices"><span class="english">Prices</span><span class="spanish">Precios</span></a> &nbsp;&nbsp;&nbsp;<a href="http://www.purplekrakentechnologies.com/#contact"><span class="english">Contact</span><span class="spanish">Contactame</span></a> &nbsp;&nbsp;&nbsp; <span class="toSpanish english">Espa&ntilde;ol</span><span class="toEnglish spanish">English</span></p>
 </header>
 	
-<div id="whoim" style="width:100%;border:1px solid transparent;height:auto;margin-top:70px;margin-left:-1px">
+<div id="whoim">
 	<h1 style="text-align:center;font-size:50px;margin-top:20px;color:white"><span class="english">Hello World!</span><span class="spanish">Hola Mundo!</span></h1>
 	<p style="text-align:center;margin-top:30px;margin-bottom:40px"><img id="mainmain" src="beardglasses.jpg" style="border-radius:100%"></p>
 </div>
