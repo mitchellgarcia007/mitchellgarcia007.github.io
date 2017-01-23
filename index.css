@@ -5,13 +5,14 @@ nav{
 	background-color: white;
 	margin: auto;
 	position: fixed;
-    display:block;
+    display:none;
     cursor: pointer;
 }
 nav ul li{
     list-style: none;
     font-size: 30px;
-    margin-top: 10px;
+    margin-top: 40px;
+    margin-left: -20px;
 }
 nav ul li:hover{
     text-decoration: underline;
