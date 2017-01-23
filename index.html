@@ -36,6 +36,18 @@ $(document).ready(function(){
 		$("nav").slideUp();
     });
 
+	$(".toSpanish_mobile").click(function(){
+		$("#menu_mobile_close").hide();
+		$("#menu_mobile").show();
+		$("nav").slideUp();
+	});
+
+	$(".toEnglish_mobile").click(function(){
+		$("#menu_mobile_close").hide();
+		$("#menu_mobile").show();
+		$("nav").slideUp();
+	});
+
 
 });
 </script>	
@@ -47,10 +59,10 @@ $(document).ready(function(){
 </header>
 <nav>
 	<ul>
-		<li>Home</li>
-		<li>Prices</li>
-		<li>Contact</li>
-		<li>Espa&ntilde;ol</li>
+		<li><a href="http://www.purplekrakentechnologies.com"><span class="english home">Home</span><span class="spanish home">Inicio</span></a></li>
+		<li><a href="http://www.purplekrakentechnologies.com/#prices"><span class="english">Prices</span><span class="spanish">Precios</span></a></li>
+		<li><a href="http://www.purplekrakentechnologies.com/#contact"><span class="english">Contact</span><span class="spanish">Contactame</span></a></li>
+		<li><span class="toSpanish english toSpanish_mobile">Espa&ntilde;ol</span><span class="toEnglish spanish toEnglish_mobile">English</span></li>
 	</ul>
 </nav>
 	
