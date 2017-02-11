@@ -1,23 +1,32 @@
-nav{
-	width: 100%;
-	height: 100%;
-	border:1px solid white;
-	background-color: white;
-	margin: auto;
-	position: fixed;
-    display:none;
-    cursor: pointer;
-    z-index:1;
+body *{
+	font-weight: 200;
+}
+#header_options{
+	text-align:right;
+	color:black;
+	font-size:17px;
+	margin-right:20px;
+	margin-top:20px;
+	letter-spacing: 0.15em;
+	float:right;
+	cursor:pointer;
+}
 
+#mainmain{
+	display: none;
 }
-nav ul li{
-    list-style: none;
-    font-size: 30px;
-    margin-top: 40px;
-    margin-left: -20px;
+h1 span{
+	font-size: 50px;
+	text-align: center;
 }
-nav ul li:hover{
-    text-decoration: underline;
+p{
+	text-align: center;
+}
+
+
+
+nav{
+	display: none;
 }
 
 .spanish{
@@ -47,6 +56,8 @@ nav ul li:hover{
     12px 12px rgba(0,0,0,0.01)
 }
 h1{
+	font-size:50px;
+	text-align: center;
 	text-shadow:1px 1px rgba(0,0,0,0.01),
     2px 2px rgba(0,0,0,0.03),
     3px 3px rgba(0,0,0,0.025),
@@ -67,10 +78,14 @@ h1{
 #prices{
 	background-color:#173D50;
 }
-
-#krakenimg{
-	max-width:200px;
+#prices h1{
+	margin-top:70px;
+	color:white;
 }
+##prices h2{
+	margin-top:50px;
+}
+
 #mainmain{
 	max-width:300px;
 	margin:auto;	
@@ -100,6 +115,8 @@ header{
 
 #developing{
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-bottom:100px;
+	width:900px;
 }
 #about_me{
 	width:100%;
@@ -108,8 +125,9 @@ header{
 	background-color:#23103C;
 	color:white;
 	}
-#about_me p{
-	font-size:25px;
+#about_me h1{
+	margin-top:50px;
+	margin-bottom:50px;
 }	
 #dream_website{
 	width:100%;
@@ -119,12 +137,27 @@ header{
 	text-align:center;
 	color:white;
 }
+#dream_website h1{
+	margin-top:60px;
+	margin-bottom:50px;
+}
+#desk{
+	display: block;
+	max-width: 900px;
+	margin-bottom:-1px !important;
+	margin: auto;
+
+}
 #passion{
 	width:100%;
 	border:1px solid transparent;
 	height:auto;
 	background-color:white;
 	text-align:center;
+}
+#passion h1{
+	margin-top:50px;
+	margin-bottom:50px;
 }
 #aslow{
 	color:white;
@@ -134,12 +167,20 @@ header{
 	background-color:#22313F;
 	text-align:center;
 }
+#aslow h1{
+	margin-top:50px;
+	margin-bottom:50px;
+}
 #what_i_do{
 	width:100%;
 	border:1px solid transparent;
 	height:auto;
 	background-color:white;
 	text-align:center;
+}
+#what_i_do h1{
+	margin-top:80px;
+	margin-bottom:50px;
 }
 #whoim{
     background: -moz-linear-gradient(45deg, #020031 0%, #6d3353 100%);
@@ -150,12 +191,20 @@ header{
     background: linear-gradient(45deg, #020031 0%,#6d3353 100%);
 	width:101%;
 	border:1px solid transparent;
-	height:auto;
+	height:490px;
 	margin-top:70px;
 	margin-left:-1px;
 }
-h1{
-	font-size:50px;
+#languages h1{
+	margin-top:80px;
+}
+
+#languagesimg{
+	display: block;
+	margin: auto;
+	max-width: 700px;
+	margin-top:50px;
+	margin-bottom:80px;
 }
 
 #mobile_friendly{
@@ -164,7 +213,18 @@ h1{
 	width:100%;
 	height: auto;
 	overflow:hidden;
-
+}
+#mobile_friendly h1{
+	margin-top:80px;
+	margin-bottom: 50px;
+	color:black;
+}
+#mobilefriendlyimg{
+	margin-top:50px;
+	margin-bottom:-1px !important;
+	max-width:100%;
+	display: block;
+	margin: auto;
 }
 a {color:black; background-color:transparent; text-decoration:none}
 a:link    {color:black; background-color:transparent; text-decoration:none}
@@ -181,11 +241,12 @@ a:active  {color:black; background-color:transparent; text-decoration:none}
 	margin-left:20px;
 	margin-top:-50px;
 }
-#p_image{
-	text-align:left;
+#krakenimg{
+	display: block;
+	max-width:200px;
 	color:white;
 	float:left;
-	margin-top:5px;
+	margin-top:10px;
 	font-size:40px;
 	margin-left:20px;	
 	}
@@ -194,7 +255,7 @@ a:active  {color:black; background-color:transparent; text-decoration:none}
 	#developing{
 		width:90% !important;
 	}
-	#rocket{
+	#desk{
 		width:100% !important;
 	}
 
@@ -215,6 +276,28 @@ a:active  {color:black; background-color:transparent; text-decoration:none}
 	font-size: 27px;
 	margin-left:20px;
 }
+nav{
+	width: 100%;
+	height: 100%;
+	border:1px solid white;
+	background-color: white;
+	margin: auto;
+	position: fixed;
+    display:none;
+    cursor: pointer;
+    z-index:1;
+}
+
+
+nav ul li{
+    list-style: none;
+    font-size: 30px;
+    margin-top: 40px;
+    margin-left: -20px;
+}
+nav ul li:hover{
+    text-decoration: underline;
+}
 
 
 
@@ -225,10 +308,9 @@ a:active  {color:black; background-color:transparent; text-decoration:none}
 	margin-top:-55px;
 	margin-right:10px;
 	}
-	#p_image{
-		text-align:center !important;
-		float:none !important;
-		margin-left:0px !important;
+	#krakenimg{
+	float:none !important;
+	margin:10px auto;
 	}
 }
 
