@@ -25,9 +25,7 @@ p{
 
 
 
-nav{
-	display: none;
-}
+
 
 .spanish{
 	display:none;
@@ -276,6 +274,8 @@ a:active  {color:black; background-color:transparent; text-decoration:none}
 	font-size: 27px;
 	margin-left:20px;
 }
+
+
 nav{
 	width: 100%;
 	height: 100%;
@@ -299,6 +299,9 @@ nav ul li:hover{
     text-decoration: underline;
 }
 
+nav{
+	display: none;
+}
 
 
 	#header_options{

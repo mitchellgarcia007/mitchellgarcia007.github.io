@@ -1,11 +1,10 @@
 $(document).ready(function(){
 
-	//$("#mainmain").show("slow");
+    $("nav").hide();
 	$("#mainmain").fadeIn(3000);
-	//$("#mainmain").css("visibility", "visible");
 
 	$(".spanish").hide();
-	$("nav").hide();
+	
 
 	$(".toSpanish").click(function(){
 		$(".english").hide();
