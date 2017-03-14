@@ -1,0 +1,56 @@
+body{
+	overflow-x:hidden;
+	margin: 0;
+}
+#content{
+    width: 100%;
+    border:1px solid transparent;
+    height: 1000px;
+}
+footer{
+    height:50px;
+    border:1px solid transparent;
+    background-color: #333;
+    width: 100%;
+}
+#left{
+    width: 25%;
+    border:1px solid transparent;
+    height: 100%;
+    float:left;
+}
+#menu_left{
+    width:250px;
+    height:270px;
+    border:1px solid transparent;
+    margin:20px 0px 0px 20px;
+}
+#right{
+    width: 75%;
+    border:1px solid transparent;
+    height:100%;
+    float:left;
+}
+#logo{
+    max-width:240px;
+    display: block;
+    margin: auto;
+}
+#speaker{
+    width:500px;
+    display: block;
+    margin: 270px auto;
+}
+.font{
+    font-size: 14px;
+    font-family: "HelveticaNeue-Light", Helvetica, Arial, serif;
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    line-height: 22px;
+    text-align: center;
+}
+.font:hover{
+    font-weight:bold;
+    cursor: pointer;
+}
