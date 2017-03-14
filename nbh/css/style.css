@@ -5,7 +5,7 @@ body{
 #content{
     width: 100%;
     border:1px solid transparent;
-    height: 1000px;
+    height: 1050px;
 }
 footer{
     height:50px;
@@ -53,4 +53,31 @@ footer{
 .font:hover{
     font-weight:bold;
     cursor: pointer;
+}
+
+
+@media only screen and (max-width: 800px) {
+#content{
+    height: auto;
+}
+#left{
+    width: 100%;
+    height:400px;
+    float:none;
+}
+#menu_left{
+    margin:30px auto;
+}
+#right{
+    width: 100%;
+    height:650px;
+    float:none;
+}
+#speaker{
+    width:90%;
+    display: block;
+    margin: auto;
+}
+
+
 }
