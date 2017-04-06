@@ -60,7 +60,7 @@
         <div class="col-sm-9">
             <br>
             <blockquote class="blockquote">
-                <strong><p class="text-muted"><span class="glyphicon glyphicon-screenshot"></span><span class="text-success"> Available at</span> Music Library Stacks (ML410.L78 C4 1983)</p></strong>
+                <strong data-toggle="modal" data-target="#myModal"><p class="text-muted" style="cursor:pointer"><span class="glyphicon glyphicon-map-marker" style="color:red"></span><span class="text-success map"> Available at</span> Music Library Stacks (ML410.L78 C4 1983)</p></strong>
             </blockquote>
         </div>
         <div class="col-sm-9">
@@ -125,7 +125,7 @@
             <blockquote class="blockquote">
                 <strong><p class="text-muted">Request Options:</strong></p>
                 <div class="well" style="background-color:white;overflow:hidden">
-                    <strong><p class="text-primary">Music Library Stacks (ML410.L78 C4 1983)</p></strong>
+                    <strong data-toggle="modal" data-target="#myModal" style="cursor:pointer"><p class="text-primary"><span class="glyphicon glyphicon-map-marker" style="color:red"></span> Music Library Stacks (ML410.L78 C4 1983)</p></strong>
                     <p class="text-muted">(1 copy, 1 available, 0 requests)</p>
                     <hr>
                     <p class="text-muted">1 - 1 of 1 Records</p>
@@ -155,9 +155,28 @@
     </div>
 </div>
 
-<style>
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
 
-</style>
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title text-primary">Cats : the book of the musical : based on Old Possum's book of practical cats by T.S. Eliott</h4>
+      </div>
+      <div class="modal-body">
+        <img src="images/map.jpg" class="img-rounded" style="width:100%">
+      </div>
+      <div class="modal-footer">
+        <a href="images/map.jpg" class="btn btn-primary" role="button" download>Download Map</a>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Modal Ends -->
 
 </body>
 </html>
