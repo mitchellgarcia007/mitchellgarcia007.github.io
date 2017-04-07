@@ -10,8 +10,8 @@
 </head>
 <body>
 
-<nav class="navbar navbar-default">
-  <div class="container-fluid" style="border-bottom:1px solid #ddd">
+<nav class="navbar navbar-inverse" style="border-radius: 0px">
+  <div class="container-fluid" style="border-bottom:1px solid black">
     <div class="navbar-header">
       <a class="navbar-brand" href="#">Oviatt Library</a>
     </div>
@@ -19,6 +19,7 @@
       <li class="active"><a href="#">Home</a></li>
       <li><a href="#">About</a></li>
     </ul>
+    <button class="btn btn-primary navbar-btn" data-toggle="modal" data-target="#myModalSignIn">Sign In</button>
   </div>
   <br>
   <div class="container-fluid">
@@ -60,7 +61,7 @@
         <div class="col-sm-9">
             <br>
             <blockquote class="blockquote">
-                <strong data-toggle="modal" data-target="#myModal"><p class="text-muted" style="cursor:pointer"><span class="glyphicon glyphicon-map-marker" style="color:red"></span><span class="text-success map"> Available at</span> Music Library Stacks (ML410.L78 C4 1983)</p></strong>
+                <strong data-toggle="modal" data-target="#myModalMap"><p class="text-muted" style="cursor:pointer"><span class="glyphicon glyphicon-map-marker" style="color:red"></span><span class="text-success map"> Available at</span> Music Library Stacks (ML410.L78 C4 1983)</p></strong>
             </blockquote>
         </div>
         <div class="col-sm-9">
@@ -116,7 +117,7 @@
             <blockquote class="blockquote">
                 <strong><p class="text-muted">Find in Library</strong></p>
                 <div class="alert alert-warning">
-                    Request Items and Save Results <span class="glyphicon glyphicon-log-in" style="color:#337ab7"></span><span style="color:#337ab7"> Sign In</span>
+                    Request Items and Save Results <span data-toggle="modal" data-target="#myModalSignIn" style="cursor:pointer"><span class="glyphicon glyphicon-log-in" style="color:#337ab7"></span><span style="color:#337ab7"> Sign In</span></span>
                 </div>
             </blockquote>
         </div>
@@ -125,7 +126,7 @@
             <blockquote class="blockquote">
                 <strong><p class="text-muted">Request Options:</strong></p>
                 <div class="well" style="background-color:white;overflow:hidden">
-                    <strong data-toggle="modal" data-target="#myModal" style="cursor:pointer"><p class="text-primary"><span class="glyphicon glyphicon-map-marker" style="color:red"></span> Music Library Stacks (ML410.L78 C4 1983)</p></strong>
+                    <strong data-toggle="modal" data-target="#myModalMap" style="cursor:pointer"><p class="text-primary"><span class="glyphicon glyphicon-map-marker" style="color:red"></span> Music Library Stacks (ML410.L78 C4 1983)</p></strong>
                     <p class="text-muted">(1 copy, 1 available, 0 requests)</p>
                     <hr>
                     <p class="text-muted">1 - 1 of 1 Records</p>
@@ -134,8 +135,8 @@
                         <tr>
                             <th>BARCODE</th>
                             <th>TYPE</th>
-                            <th>POLICY</th>
-                            <th>DESCRIPTION</th>
+                            <th class="hidden-xs">POLICY</th>
+                            <th class="hidden-xs">DESCRIPTION</th>
                             <th>STATUS</th>
                         </tr>
                         </thead>
@@ -143,8 +144,8 @@
                         <tr>
                             <td>11719011012111</td>
                             <td>Book</td>
-                            <td>Loanable</td>
-                            <td></td>
+                            <td class="hidden-xs">Loanable</td>
+                            <td class="hidden-xs"></td>
                             <td>Item in place</td>
                         </tr>
                         </tbody>
@@ -155,8 +156,8 @@
     </div>
 </div>
 
-<!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
+<!-- Modal MAP -->
+<div id="myModalMap" class="modal fade" role="dialog">
   <div class="modal-dialog">
 
     <!-- Modal content-->
@@ -177,6 +178,47 @@
   </div>
 </div>
 <!-- Modal Ends -->
+
+<!-- Modal Sign In -->
+<div id="myModalSignIn" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title text-primary">Sign In</h4>
+      </div>
+      <div class="modal-body">
+            <form>
+            <div class="form-group">
+                <label for="email">Email address:</label>
+                <input type="email" class="form-control" id="email">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd">
+            </div>
+            
+            </form>
+      </div>
+      <div class="modal-footer">
+          <button type="submit" class="btn btn-primary">Login</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Modal Ends -->
+
+<style>
+@media only screen and (max-width: 768px) {
+    table {
+        font-size: 12px;
+    }
+}
+</style>
 
 </body>
 </html>
