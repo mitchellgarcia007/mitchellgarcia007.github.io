@@ -15,16 +15,14 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<!-- Load Facebook SDK for JavaScript -->
-  <div id="fb-root"></div>
-  <script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
-  </script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 <script>
 $( window ).load(function() {
@@ -190,11 +188,7 @@ $( window ).load(function() {
 </div>	
 
 <footer style="background-color:#333;height:auto;border:1px solid #333">
-	  <!-- Your share button code -->
-  <div class="fb-share-button" 
-    data-href="http://www.purplekrakentechnologies.com" 
-    data-layout="button_count">
-  </div>
+<div class="fb-share-button" data-href="http://www.purplekrakentechnologies.com/" data-layout="box_count" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.purplekrakentechnologies.com%2F&amp;src=sdkpreparse">Share</a></div>
 <h4 style="text-align:center;color:white;font-weight:200">Copyright © 2016 Purple Kraken Technologies</h4>
 <!--<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>-->
 
