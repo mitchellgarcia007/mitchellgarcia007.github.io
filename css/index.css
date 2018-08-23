@@ -196,7 +196,7 @@ header{
 	*/
 
 	/* The image used */
-    background-image: url("/images/purple_space.jpg");
+    /* background-image: url("/images/purple_space.jpg");*/
 
     /* Full height */
     height: 100%; 
@@ -205,6 +205,7 @@ header{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+	background-color: #21242E;
 	width:101%;
 	border:1px solid transparent;
 	
