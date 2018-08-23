@@ -266,7 +266,12 @@ a:active  {color:black; background-color:transparent; text-decoration:none}
 	margin-top:10px;
 	font-size:40px;
 	margin-left:20px;	
-	}
+}
+#logoSite{
+	float:left;
+	margin-top:15px;
+	margin-left:15px;	
+}
 
 @media only screen and (max-width: 1000px) {
 	#developing{
@@ -289,7 +294,7 @@ a:active  {color:black; background-color:transparent; text-decoration:none}
 	#menu_mobile{
 	display:block;
 	text-align: left;
-	margin-top:-53px;
+	margin-top:-50px;
 	font-size: 27px;
 	margin-left:20px;
 }
@@ -324,15 +329,19 @@ nav{
 
 
 	#header_options{
-	display:none;
-	float:right;
-	font-size:30px;
-	margin-top:-55px;
-	margin-right:10px;
+		display:none;
+		float:right;
+		font-size:30px;
+		margin-top:-55px;
+		margin-right:10px;
 	}
 	#krakenimg{
-	float:none !important;
-	margin:10px auto;
+		float:none !important;
+		margin:10px auto;
+	}
+	#logoSite{
+		float:none !important;
+		margin:17px auto;
 	}
 }
 
