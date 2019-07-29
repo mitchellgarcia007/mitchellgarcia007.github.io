@@ -10,44 +10,49 @@
 </head>
 <body>
 
-<nav class="navbar navbar-inverse" style="border-radius: 0px">
+<nav class="navbar navbar-inverse" style="border-radius: 0px;margin-bottom: 0px">
   <div class="container-fluid" style="border-bottom:1px solid black">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#"><img src="https://www.cesarspalace.com.ec/w4/templates/jl_particles/custom/images/logotipo_header1.png" style="margin-top:-10px;width:150px"></a>
+      <a class="navbar-brand" href="#"><img src="https://www.cesarspalace.com.ec/w4/templates/jl_particles/custom/images/logotipo_header1.png" style="margin-top:-10px;margin-left:10px;width:150px"></a>
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="#">INICIO</a></li>
       <li><a href="#">HABITACIONES</a></li>
       <li><a href="#">SERVICIOS</a></li>
-      <li><a href="#">EXCLUSIVIDADES</a></li>
-      <li><a href="#">SEX SHOP</a></li>
+      <li><a href="#">TIENDA </a></li>
       <li><a href="#">CONTACTENOS</a></li>
     </ul>
-    <button class="btn btn-primary navbar-btn" data-toggle="modal" data-target="#myModalSignIn">MI CUENTA</button>
+    <button class="btn btn-primary navbar-btn" data-toggle="modal" data-target="#myModalSignIn" style="background-color: transparent;border-color: white">RESERVACIONES</button>
   </div>
   <br>
 </nav>
   
-<div class="container-fluid">
+<div class="container-fluid" id="mainDiv">
     <!-- Homepage Video -->
-    <video playsinline poster autoplay muted loop src="https://gcs-vimeo.akamaized.net/exp=1564142852~acl=%2A%2F1061860345.mp4%2A~hmac=5807b7c45d4e8f33a38d22064929840a37fe2fb3dff007ce2729bffc93363dd5/vimeo-prod-skyfire-std-us/01/4033/9/245166836/1061860345.mp4" d="homepage_main_video" class="home-hero__video" style="margin-top:0px;width:100%;height:100%">
+    <video playsinline poster autoplay muted loop src="https://player.vimeo.com/external/301388680.hd.mp4?s=87be2a1c02adf3ee65b2bace802ef357436a1722&profile_id=174" d="homepage_main_video" class="home-hero__video" style="margin-top:0px;width:100%;height:100%">
     </video>
+
+    <img src="">
 </div>
 
 <style>
-    .container-fluid {
-        padding-right: unset;
-        padding-left: unset;
-    }
+  #mainDiv{
+    height: auto;
+  }
 
-    .home-hero__video-overlay {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    background-color: rgba(0,0,0,.4);
-    }
+  .container-fluid {
+      padding-right: unset;
+      padding-left: unset;
+  }
+
+  .home-hero__video-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0,0,0,.4);
+  }
 </style>
 
 </body>
