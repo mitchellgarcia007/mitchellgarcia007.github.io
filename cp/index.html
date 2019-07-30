@@ -10,19 +10,19 @@
 </head>
 <body>
 
-<nav class="navbar navbar-inverse" style="border-radius: 0px;margin-bottom: 0px">
-  <div class="container-fluid" style="border-bottom:1px solid black">
+<nav class="navbar navbar-inverse navbar-fixed-top" style="border-radius: 0px;margin-bottom: 0px">
+  <div class="container-fluid" style="border-bottom:1px solid transparent;margin-bottom: -20px">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#"><img src="https://www.cesarspalace.com.ec/w4/templates/jl_particles/custom/images/logotipo_header1.png" style="margin-top:-10px;margin-left:10px;width:150px"></a>
+      <a class="navbar-brand" href="#"><img id="nav_logo" src="https://www.cesarspalace.com.ec/w4/templates/jl_particles/custom/images/logotipo_header1.png" style="margin-top:-10px;margin-left:10px;width:150px"></a>
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="#">INICIO</a></li>
-      <li><a href="#">HABITACIONES</a></li>
-      <li><a href="#">SERVICIOS</a></li>
-      <li><a href="#">TIENDA </a></li>
-      <li><a href="#">CONTACTENOS</a></li>
+      <li class="active hidden-xs"><a href="#">INICIO</a></li>
+      <li class="hidden-xs"><a href="#">HABITACIONES</a></li>
+      <li class="hidden-xs"><a href="#">SERVICIOS</a></li>
+      <li class="hidden-xs"><a href="#">TIENDA </a></li>
+      <li class="hidden-xs"><a href="#">CONTACTENOS</a></li>
     </ul>
-    <button class="btn btn-primary navbar-btn" data-toggle="modal" data-target="#myModalSignIn" style="background-color: transparent;border-color: white">RESERVACIONES</button>
+    <button class="btn btn-primary navbar-btn hidden-xs" data-toggle="modal" data-target="#myModalSignIn" style="background-color: transparent;border-color: white">RESERVACIONES</button>
   </div>
   <br>
 </nav>
@@ -32,7 +32,7 @@
     <video playsinline poster autoplay muted loop src="https://player.vimeo.com/external/301388680.hd.mp4?s=87be2a1c02adf3ee65b2bace802ef357436a1722&profile_id=174" d="homepage_main_video" class="home-hero__video" style="margin-top:0px;width:100%;height:100%">
     </video>
 
-    <img src="">
+    <img src="http://www.mitchellgarcia.net/cp/img/book1.png" style="width:60%; display:block;margin:auto">
 </div>
 
 <style>
@@ -52,6 +52,18 @@
   left: 0;
   top: 0;
   background-color: rgba(0,0,0,.4);
+  }
+
+  /* Mobile View */
+  @media only screen and (max-width: 768px) {
+    .navbar-brand {
+      width: 100%;
+    }
+    #nav_logo {
+      width: 185px !important;
+      display: block !important;
+      margin: auto !important;
+    }
   }
 </style>
 
