@@ -10,34 +10,128 @@
 </head>
 <body>
 
-<nav class="navbar navbar-inverse navbar-fixed-top" style="border-radius: 0px;margin-bottom: 0px">
+<nav class="navbar navbar-inverse navbar-fixed-top" style="border-radius: 0px;margin-bottom: 0px;padding-top: 10px">
   <div class="container-fluid" style="border-bottom:1px solid transparent;margin-bottom: -20px">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#"><img id="nav_logo" src="https://www.cesarspalace.com.ec/w4/templates/jl_particles/custom/images/logotipo_header1.png" style="margin-top:-10px;margin-left:10px;width:150px"></a>
-    </div>
     <ul class="nav navbar-nav">
       <li class="active hidden-xs"><a href="#">INICIO</a></li>
       <li class="hidden-xs"><a href="#">HABITACIONES</a></li>
       <li class="hidden-xs"><a href="#">SERVICIOS</a></li>
-      <li class="hidden-xs"><a href="#">TIENDA </a></li>
+      <li class=""><a href="#"><img id="nav_logo" src="https://www.cesarspalace.com.ec/w4/templates/jl_particles/custom/images/logotipo_header1.png" style="margin-top:-20px;margin-left:10px;margin-right:10px;width:220px"></a></li>
+      <li class="hidden-xs"><a href="#">SEX SHOP</a></li>
       <li class="hidden-xs"><a href="#">CONTACTENOS</a></li>
+      <li class="hidden-xs"><a href="#"><button class="btn btn-primary navbar-btn hidden-xs" data-toggle="modal" data-target="#reservacionesModal" style="margin-top:-7px;background-color: transparent;border-color: white">RESERVACIONES</button></a></li>
     </ul>
-    <button class="btn btn-primary navbar-btn hidden-xs" data-toggle="modal" data-target="#myModalSignIn" style="background-color: transparent;border-color: white">RESERVACIONES</button>
   </div>
   <br>
 </nav>
   
 <div class="container-fluid" id="mainDiv">
     <!-- Homepage Video -->
-    <video playsinline poster autoplay muted loop src="https://player.vimeo.com/external/301388680.hd.mp4?s=87be2a1c02adf3ee65b2bace802ef357436a1722&profile_id=174" d="homepage_main_video" class="home-hero__video" style="margin-top:0px;width:100%;height:100%">
+    <video playsinline poster autoplay muted loop src="https://player.vimeo.com/external/301388680.hd.mp4?s=87be2a1c02adf3ee65b2bace802ef357436a1722&profile_id=174" d="homepage_main_video" class="home-hero__video" style="margin-top:50px;margin-bottom:25px;width:100%;">
     </video>
 
-    <img src="http://www.mitchellgarcia.net/cp/img/book1.png" style="width:60%; display:block;margin:auto">
+    <div id="booking_tool">
+      <form class="form-inline" action="">
+
+        <div class="form-group">
+          <label for="sel1">Dia:</label><br>
+          <select class="form-control" id="sel1" style="width:200px">
+            <option>Agosto 15</option>
+            <option>Agosto 16</option>
+            <option>Agosto 17</option>
+            <option>Agosto 18</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="sel1">Hora de Llegada:</label><br>
+          <select class="form-control" id="sel1" style="width:200px">
+            <option>1pm</option>
+            <option>2pm</option>
+            <option>3pm</option>
+            <option>4pm</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="sel1">Hora de Salida:</label><br>
+          <select class="form-control" id="sel1" style="width:200px">
+            <option>1pm</option>
+            <option>2pm</option>
+            <option>3pm</option>
+            <option>4pm</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-default" style="margin-top: 25px;background-color:#242323;color:white;width:170px">Submit</button>
+
+      </form>
+    </div>
+
+    <!--<img src="http://www.mitchellgarcia.net/cp/img/book1.png" style="width:60%; display:block;margin:auto">-->
 </div>
+
+
+<!-- Modal -->
+<div id="reservacionesModal" style="text-align: center" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+  
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Reservaciones</h4>
+        </div>
+        <div class="modal-body">
+            <form class="form-inline" action="">
+              <div class="form-group">
+                <label for="sel1">Dia:</label><br>
+                <select class="form-control" id="sel1" style="width:200px">
+                  <option>Agosto 15</option>
+                  <option>Agosto 16</option>
+                  <option>Agosto 17</option>
+                  <option>Agosto 18</option>
+                </select>
+              </div>
+
+              <br><br>
+      
+              <div class="form-group">
+                <label for="sel1">Hora de Llegada:</label><br>
+                <select class="form-control" id="sel1" style="width:200px">
+                  <option>1pm</option>
+                  <option>2pm</option>
+                  <option>3pm</option>
+                  <option>4pm</option>
+                </select>
+              </div>
+
+              <br><br>
+      
+              <div class="form-group">
+                <label for="sel1">Hora de Salida:</label><br>
+                <select class="form-control" id="sel1" style="width:200px">
+                  <option>1pm</option>
+                  <option>2pm</option>
+                  <option>3pm</option>
+                  <option>4pm</option>
+                </select>
+              </div>
+      
+          </form>
+        </div>
+        <div class="modal-footer" style="text-align: center">
+            <button type="button" class="btn btn-default" style="background-color:#242323;color:white" data-dismiss="modal">Buscar Habitacion</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+          </div>
+      </div>
+  
+    </div>
+  </div>
 
 <style>
   #mainDiv{
-    height: auto;
+    height: 2000px;
   }
 
   .container-fluid {
@@ -54,6 +148,18 @@
   background-color: rgba(0,0,0,.4);
   }
 
+  .navbar-nav {
+    float: unset;
+    margin: auto;
+    display: block;
+    width: 1000px;
+}
+
+#booking_tool {
+  width: 825px;
+  margin: auto;
+}
+
   /* Mobile View */
   @media only screen and (max-width: 768px) {
     .navbar-brand {
@@ -62,7 +168,6 @@
     #nav_logo {
       width: 185px !important;
       display: block !important;
-      margin: auto !important;
     }
   }
 </style>
