@@ -7,14 +7,41 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
 <nav class="navbar navbar-inverse navbar-fixed-top" style="border-radius: 0px;margin-bottom: 0px;padding-top: 10px">
   <div class="container-fluid" style="border-bottom:1px solid transparent;margin-bottom: -20px">
     <ul class="nav navbar-nav">
-      <li class="active hidden-xs"><a href="#">INICIO</a></li>
-      <li class="hidden-xs"><a href="#">HABITACIONES</a></li>
+      <li class="hidden-xs"><a href="#">INICIO</a></li>
+      <li class="hidden-xs dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">HABITACIONES
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Mostrar Todas Las Habitaciones</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Suite Palacio Del Cesar</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Suite Maximus</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Suite Emperador</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Suite Perseo</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Suite Venus</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Suite Poseidón</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Suite Zeus</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Suite Eros</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Suite Hades</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Suite Afrodita</a></li>
+          </ul>
+        </li>
       <li class="hidden-xs"><a href="#">SERVICIOS</a></li>
       <li class=""><a href="#"><img id="nav_logo" src="https://www.cesarspalace.com.ec/w4/templates/jl_particles/custom/images/logotipo_header1.png" style="margin-top:-20px;margin-left:10px;margin-right:10px;width:220px"></a></li>
       <li class="hidden-xs"><a href="#">SEX SHOP</a></li>
@@ -25,6 +52,7 @@
   <br>
 </nav>
   
+<!-- mainDiv Starts -->
 <div class="container-fluid" id="mainDiv">
     <!-- Homepage Video -->
     <video playsinline poster autoplay muted loop src="https://player.vimeo.com/external/301388680.hd.mp4?s=87be2a1c02adf3ee65b2bace802ef357436a1722&profile_id=174" d="homepage_main_video" class="home-hero__video" style="margin-top:50px;margin-bottom:25px;width:100%;">
@@ -69,10 +97,26 @@
     </div>
 
     <!--<img src="http://www.mitchellgarcia.net/cp/img/book1.png" style="width:60%; display:block;margin:auto">-->
+
 </div>
+<!-- mainDiv Ends -->
+
+<!-- Footer Starts -->
+<div class="veryBottom">
+  <div class="socialMedia">
+    <ul class="fa-ul">
+        <li><a href="https://www.facebook.com/MotelCesarsPalace/" target="_blank"><span aria-hidden="true"><i class="fa fa-facebook fa-2x"></i></span></a></li>
+        <li><a href="https://www.instagram.com/cesarspalace2018/" target="_blank"><span aria-hidden="true"><i class="fa fa-instagram fa-2x"></i></span></a></li>
+        <li><a href="https://twitter.com/cesarspalace2" target="_blank"><span aria-hidden="true"><i class="fa fa-twitter fa-2x"></i></span></a></li>
+      <li><a href="" target="_blank"><span aria-hidden="true"><i class="fa fa-linkedin fa-2x"></i></span></a></li>
+      <li><a href="" target="_blank"><span aria-hidden="true"><i class="fa fa-youtube fa-2x"></i></span></a></li>
+    </ul>
+  </div>
+</div>
+<!-- Footer Ends -->
 
 
-<!-- Modal -->
+<!-- reservacionesModal Modal Starts-->
 <div id="reservacionesModal" style="text-align: center" class="modal fade" role="dialog">
     <div class="modal-dialog">
   
@@ -128,6 +172,7 @@
   
     </div>
   </div>
+<!-- reservacionesModal Modal Wnds-->
 
 <style>
   #mainDiv{
@@ -153,12 +198,47 @@
     margin: auto;
     display: block;
     width: 1000px;
-}
+  }
 
-#booking_tool {
-  width: 825px;
-  margin: auto;
-}
+  #booking_tool {
+    width: 825px;
+    margin: auto;
+  }
+
+  .veryBottom{
+  width: 100%;
+  height:80px;
+  background-color: black;
+  border:1px solid black;
+  }
+
+  .socialMedia{
+    width:300px;
+    border: 1px solid transparent;
+    margin: 19px auto;
+  }
+
+  .socialMedia li {
+    display: inline;
+    margin-left:20px;
+  }
+
+  .socialMedia li a{
+    color: #6d6e71;
+  }
+
+  .socialMedia li a:hover{
+    color: #c8543b;
+  }
+
+  footer{
+    padding: 100px 0px 150px 0px;
+    margin-top: 0px;
+    width: 100%;
+    height:auto;
+    background-color: black;
+    border:1px solid black;
+  }
 
   /* Mobile View */
   @media only screen and (max-width: 768px) {
