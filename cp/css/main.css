@@ -1,5 +1,6 @@
 #mainDiv {
-    height: 2000px;
+    height: auto;
+    margin-bottom: 200px;
 }
 
 .navbar-nav {
@@ -21,7 +22,7 @@
 }
 
 .servicios_row {
-    width: 1000px;
+    max-width: 1000px;
     border: 1px solid transparent;
     height: 300px;
     margin: 40px auto;
@@ -48,7 +49,24 @@
     margin: auto;
 }
 
-#booking_tool {
+.servicios_options_div_text {
+    padding: 10px;
+}
+
+.habitaciones_main_div {
+    max-width: 900px;
+    border: 1px solid transparent;
+    height: auto;
+    margin: 40px auto;
+}
+
+.habitaciones_main_div_img {
+    max-width: 800px;
+    display: block;
+    margin: auto;
+}
+
+.booking_tool {
     width: 100%;
     margin: auto;
     bottom: 0;
@@ -100,13 +118,42 @@ footer {
 /* Mobile View */
 
 @media only screen and (max-width: 768px) {
+
+    .navbar-nav {
+        width: 95%;
+        margin-bottom: 15px;
+    }
+
     .navbar-brand {
         width: 100%;
     }
+
     #nav_logo {
+        margin-left: unset !important;
+        margin-right: unset !important;
         width: 185px !important;
         display: block !important;
+        margin: auto !important;
+        float: left;
     }
+
+    .navbar-toggle {
+        margin-top: -8px;
+    }
+    
+    .servicios_options {
+        width: 100%;
+        margin: unset;
+    }
+
+    .veryBottom {
+        height: unset;
+    }
+
+    .habitaciones_main_div_img {
+        width: 100%;
+    }
+
 }
 
 .skinny_font {
