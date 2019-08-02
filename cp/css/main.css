@@ -21,6 +21,12 @@
     width: 100%;
 }
 
+.homepage_main_img_mobile {
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
 .servicios_row {
     max-width: 1000px;
     border: 1px solid transparent;
@@ -126,6 +132,7 @@ footer {
 
     .navbar-brand {
         width: 100%;
+        float: unset;
     }
 
     #nav_logo {
@@ -134,11 +141,11 @@ footer {
         width: 185px !important;
         display: block !important;
         margin: auto !important;
-        float: left;
     }
 
     .navbar-toggle {
-        margin-top: -8px;
+        margin-top: 25px;
+        margin-right: 35px;
     }
     
     .servicios_options {

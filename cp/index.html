@@ -16,52 +16,57 @@
 
     <nav class="navbar navbar-inverse navbar-fixed-top" style="border-radius: 0px;margin-bottom: 0px;padding-top: 10px">
         <div class="container-fluid" style="border-bottom:1px solid transparent;margin-bottom: -20px">
-            <ul class="nav navbar-nav">
-                <li class="hidden-xs skinny_font"><a href="index.html">INICIO</a></li>
-                <li class="hidden-xs skinny_font dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">HABITACIONES
-                        <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="habitaciones.html">Ver Todas Las Habitaciones</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Suite Palacio Del Cesar</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Suite Maximus</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Suite Emperador</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Suite Perseo</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Suite Venus</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Suite Poseidón</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Suite Zeus</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Suite Eros</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Suite Hades</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Suite Afrodita</a></li>
-                    </ul>
-                </li>
-                <li class="hidden-xs skinny_font"><a href="#">SERVICIOS</a></li>
-                <li class="">
-                    <a href="index.html"><img id="nav_logo" src="https://www.cesarspalace.com.ec/w4/templates/jl_particles/custom/images/logotipo_header1.png" style="margin-top:-20px;margin-left:10px;margin-right:10px;width:220px"></a>
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>                        
-                          </button>
-                </li>
-                <li class="hidden-xs skinny_font"><a href="#">SEX SHOP</a></li>
-                <li class="hidden-xs skinny_font"><a href="#">CONTACTENOS</a></li>
-                <li class="hidden-xs"><a href="#"><button class="btn btn-primary navbar-btn hidden-xs skinny_font"
-                            data-toggle="modal" data-target="#reservacionesModal"
-                            style="margin-top:-7px;background-color: transparent;border-color: white">RESERVACIONES</button></a>
-                </li>
-                
-            </ul>
+            <div class="navbar-header visible-xs">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand" href="index.html"><img id="nav_logo" src="https://www.cesarspalace.com.ec/w4/templates/jl_particles/custom/images/logotipo_header1.png" style="margin-top:-20px;margin-left:10px;margin-right:10px;width:220px"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="skinny_font active"><a href="index.html">INICIO</a></li>
+                    <li class="skinny_font dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">HABITACIONES
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="habitaciones.html">Ver Todas Las Habitaciones</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Suite Palacio Del Cesar</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Suite Maximus</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Suite Emperador</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Suite Perseo</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Suite Venus</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Suite Poseidón</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Suite Zeus</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Suite Eros</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Suite Hades</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Suite Afrodita</a></li>
+                        </ul>
+                    </li>
+                    <li class="skinny_font"><a href="#">SERVICIOS</a></li>
+                    <li class="hidden-xs">
+                        <a href="index.html"><img id="nav_logo" src="https://www.cesarspalace.com.ec/w4/templates/jl_particles/custom/images/logotipo_header1.png" style="margin-top:-20px;margin-left:10px;margin-right:10px;width:220px"></a>
+                    </li>
+                    <li class="skinny_font"><a href="#">SEX SHOP</a></li>
+                    <li class="skinny_font"><a href="#">CONTACTENOS</a></li>
+                    <li class=""><a href="#"><button class="btn btn-primary navbar-btn hidden-xs skinny_font"
+                                data-toggle="modal" data-target="#reservacionesModal"
+                                style="margin-top:-7px;background-color: transparent;border-color: white">RESERVACIONES</button></a>
+                    </li>
+                    
+                </ul>
+            </div>
         </div>
         <br>
     </nav>
@@ -69,8 +74,10 @@
     <!-- mainDiv Starts -->
     <div class="container-fluid" id="mainDiv">
         <!-- Homepage Video -->
-        <video playsinline poster autoplay muted loop src="https://player.vimeo.com/external/301388680.hd.mp4?s=87be2a1c02adf3ee65b2bace802ef357436a1722&profile_id=174" d="homepage_main_video" class="home-hero__video">
+        <video playsinline poster autoplay muted loop src="https://player.vimeo.com/external/301388680.hd.mp4?s=87be2a1c02adf3ee65b2bace802ef357436a1722&profile_id=174" d="homepage_main_video" class="home-hero__video hidden-xs">
         </video>
+
+        <img src="img/room.jpg" class="homepage_main_img_mobile visible-xs">
 
         <div id="servicios">
             <h2 class="text-center skinny_font" style="margin-bottom: 70px">NUESTROS SERVICIOS</h2>
