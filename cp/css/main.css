@@ -130,6 +130,14 @@ footer {
         margin-bottom: 15px;
     }
 
+    .navbar-inverse .navbar-nav>li>a {
+        color: white;
+    }
+
+    .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+        color: white;
+    }
+
     .navbar-brand {
         width: 100%;
         float: unset;
