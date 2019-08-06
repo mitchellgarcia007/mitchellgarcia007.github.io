@@ -7,7 +7,8 @@
     float: unset;
     margin: auto;
     display: block;
-    width: 1150px;
+    width: 1250px;
+    padding-left: 120px;
 }
 
 .container-fluid {
@@ -73,6 +74,7 @@
 }
 
 .booking_tool {
+    display: none;
     width: 100%;
     margin: auto;
     bottom: 0;
@@ -87,7 +89,7 @@
 
 .veryBottom {
     width: 100%;
-    height: 150px;
+    height: auto;
     background-color: black;
     border: 1px solid black;
 }
