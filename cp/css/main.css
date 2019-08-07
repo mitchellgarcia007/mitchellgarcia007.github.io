@@ -11,6 +11,21 @@
     padding-left: 120px;
 }
 
+.reservaciones_nav_btn {
+    margin-top:7px;
+    background-color: transparent;
+    border-color: white;
+}
+
+.reservaciones_nav_btn:active,
+.reservaciones_nav_btn:hover,
+.reservaciones_nav_btn:focus,
+.reservaciones_nav_btn:visited
+{
+    background-color: transparent;
+    border-color: white;
+}
+
 .container-fluid {
     padding-right: unset;
     padding-left: unset;
