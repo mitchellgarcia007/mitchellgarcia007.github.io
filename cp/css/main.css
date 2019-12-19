@@ -46,6 +46,8 @@
 #homepage_habitaciones {
     height: 700px;
     padding-top: 50px;
+    width: 80%;
+    margin: auto;
 }
 
 .carousel-control {
@@ -74,6 +76,8 @@
 #servicios {
     background-color: #f1f1f1;
     padding-top: 50px;
+    width: 80%;
+    margin: auto;
 }
 
 .servicios_row {
