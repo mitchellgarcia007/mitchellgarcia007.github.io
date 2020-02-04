@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CESARS PALACE</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Mobile Menu -->
+            <div class="navbar-header visible-xs">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand" href="index.html"><img id="nav_logo" src="img/lion2.jpg"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="skinny_font active"><a href="index.html">INICIO</a></li>
+                    <li class="skinny_font dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">HABITACIONES
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="habitaciones.html">Ver Todas Las Habitaciones</a></li>
+                            <li class="divider"></li>
+                            <li><a href="habitacion1.html">Suite Palacio Del Cesar</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Suite Maximus</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Suite Emperador</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Suite Perseo</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Suite Venus</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Suite Poseidón</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Suite Zeus</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Suite Eros</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Suite Hades</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Suite Afrodita</a></li>
+                        </ul>
+                    </li>
+                    <li class="skinny_font"><a href="#">SERVICIOS</a></li>
+                    <li class="hidden-xs">
+                        <!-- Desktop Menu -->
+                        <a href="index.html"><img id="nav_logo" src="img/lion2.jpg"></a>
+                    </li>
+                    <li class="skinny_font"><a href="#">TIENDA XXX</a></li>
+                    <li class="skinny_font"><a href="#">CONTACTENOS</a></li>
+                    <li class="">
+                        <button class="btn btn-primary navbar-btn hidden-xs skinny_font reservaciones_nav_btn" data-toggle="modal" data-target="#reservacionesModal">RESERVACIONES</button>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <br>
+    </nav>
+
+    <!-- mainDiv Starts -->
+    <div class="container-fluid" id="mainDiv">
+        
+    </div>
+    <!-- mainDiv Ends -->
+
+    <!-- Footer Starts -->
+    <div class="veryBottom">
+        <div class="socialMedia">
+            <ul class="fa-ul">
+                <li><a href="https://www.facebook.com/MotelCesarsPalace/" target="_blank"><span aria-hidden="true"><i
+                                class="fa fa-facebook fa-2x"></i></span></a></li>
+                <li><a href="https://www.instagram.com/cesarspalace2018/" target="_blank"><span aria-hidden="true"><i
+                                class="fa fa-instagram fa-2x"></i></span></a></li>
+                <li><a href="https://twitter.com/cesarspalace2" target="_blank"><span aria-hidden="true"><i
+                                class="fa fa-twitter fa-2x"></i></span></a></li>
+                <li><a href="" target="_blank"><span aria-hidden="true"><i class="fa fa-linkedin fa-2x"></i></span></a>
+                </li>
+                <li><a href="" target="_blank"><span aria-hidden="true"><i class="fa fa-youtube fa-2x"></i></span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Footer Ends -->
+
+
+    <!-- reservacionesModal Modal Starts-->
+    <div id="reservacionesModal" style="text-align: center" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Reservaciones</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-inline" action="">
+                        <div class="form-group text-left">
+                            <label for="sel1">Dia:</label><br>
+                            <select class="form-control" id="sel1" style="width:200px">
+                                <option>Agosto 15</option>
+                                <option>Agosto 16</option>
+                                <option>Agosto 17</option>
+                                <option>Agosto 18</option>
+                            </select>
+                        </div>
+
+                        <br><br>
+
+                        <div class="form-group text-left">
+                            <label for="sel1">Hora de Llegada:</label><br>
+                            <select class="form-control" id="sel1" style="width:200px">
+                                <option>1pm</option>
+                                <option>2pm</option>
+                                <option>3pm</option>
+                                <option>4pm</option>
+                            </select>
+                        </div>
+
+                        <br><br>
+
+                        <div class="form-group text-left">
+                            <label for="sel1">Hora de Salida:</label><br>
+                            <select class="form-control" id="sel1" style="width:200px">
+                                <option>1pm</option>
+                                <option>2pm</option>
+                                <option>3pm</option>
+                                <option>4pm</option>
+                            </select>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="modal-footer" style="text-align: center">
+                    <button type="button" class="btn btn-default" style="background-color:#242323;color:white" data-dismiss="modal">Buscar Habitacion</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- reservacionesModal Modal Wnds-->
+
+<script>
+$('#myCarousel').carousel({
+  interval: 5000
+})
+
+$('.carousel .item').each(function(){
+  var next = $(this).next();
+  if (!next.length) {
+    next = $(this).siblings(':first');
+  }
+  next.children(':first-child').clone().appendTo($(this));
+  
+  if (next.next().length>0) {
+    next.next().children(':first-child').clone().appendTo($(this));
+  }
+  else {
+  	$(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+  }
+});
+</script>   
+
+</body>
+
+</html>
