@@ -4,10 +4,10 @@
 }
 
 #nav_logo {
-    margin-top:-15px;
-    margin-left:10px;
-    margin-right:10px;
-    width:240px;
+    margin-top: -15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 240px;
 }
 
 .navbar {
@@ -27,7 +27,7 @@
 }
 
 .reservaciones_nav_btn {
-    margin-top:7px;
+    margin-top: 7px;
     background-color: transparent;
     border-color: white;
 }
@@ -35,8 +35,7 @@
 .reservaciones_nav_btn:active,
 .reservaciones_nav_btn:hover,
 .reservaciones_nav_btn:focus,
-.reservaciones_nav_btn:visited
-{
+.reservaciones_nav_btn:visited {
     background-color: transparent;
     border-color: white;
 }
@@ -44,7 +43,7 @@
 .container-fluid {
     padding-right: unset;
     padding-left: unset;
-    border-bottom:1px solid transparent;
+    border-bottom: 1px solid transparent;
     margin-bottom: -20px;
 }
 
@@ -64,8 +63,6 @@
     height: 700px;
     padding-top: 50px;
 }
-
-
 
 #servicios {
     background-color: #f1f1f1;
@@ -102,19 +99,6 @@
 
 .servicios_options_div_text {
     padding: 10px;
-}
-
-.habitaciones_main_div {
-    max-width: 900px;
-    border: 1px solid transparent;
-    height: auto;
-    margin: 40px auto;
-}
-
-.habitaciones_main_div_img {
-    max-width: 800px;
-    display: block;
-    margin: auto;
 }
 
 .booking_tool {
@@ -157,8 +141,6 @@
     color: #c8543b;
 }
 
-
-
 /* Carousel */
 .carousel-control {
     opacity: unset;
@@ -167,7 +149,8 @@
     color: black;
 }
 
-.carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
+.carousel-control .glyphicon-chevron-right,
+.carousel-control .icon-next {
     margin-right: -40px;
 }
 
@@ -176,7 +159,7 @@
     text-decoration: none;
     filter: alpha(opacity=90);
     outline: 0;
-    opacity: .5;
+    opacity: 0.5;
 }
 
 .carousel-control:focus {
@@ -192,38 +175,41 @@
 }
 
 .carousel-inner .item.next {
-    transform: translateX(33%)
+    transform: translateX(33%);
 }
 
 .carousel-inner .item.prev {
-    transform: translateX(-33%)
+    transform: translateX(-33%);
 }
 
 .carousel-inner .item.right,
-.carousel-inner .item.left { 
+.carousel-inner .item.left {
     transform: translateX(0);
 }
 
-.carousel-control.left,.carousel-control.right {background-image:none;}
+.carousel-control.left,
+.carousel-control.right {
+    background-image: none;
+}
 
 .btn-ver-habitacion {
     background-color: #222;
-    color:white;
-    margin:auto;
+    color: white;
+    margin: auto;
 }
 
 .btn-ver-habitacion:hover {
     background-color: #222;
-    color:white;
-    margin:auto;
+    color: white;
+    margin: auto;
 }
 
 /* Nav Desktop */
-.navbar-inverse .navbar-nav>li>a {
+.navbar-inverse .navbar-nav > li > a {
     color: white;
 }
 
-.navbar-inverse .navbar-nav>li>a:hover {
+.navbar-inverse .navbar-nav > li > a:hover {
     color: #9d9d9d;
 }
 
@@ -231,66 +217,64 @@
     background-color: #000000;
 }
 
-
 /* INVENTORY */
-.carsDiv{
-    max-width:95%;
+.carsDiv {
+    max-width: 95%;
     margin: 20px auto;
     border-radius: 3px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     text-align: center;
     padding-bottom: 25px;
-  }
-  .carsDiv img{
+}
+.carsDiv img {
     width: 100%;
     border-top-right-radius: 3px;
     border-top-left-radius: 3px;
     -moz-transition: all 0.3s;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
-  }
-  .carsDiv .carModel{
+}
+.carsDiv .carModel {
     font-size: 20px;
-  }
-  .carsDiv .monthlyPrice{
+}
+.carsDiv .monthlyPrice {
     font-size: 30px;
     font-weight: 100 !important;
-  }
-  .carsDiv button{
-    margin:auto;
+}
+.carsDiv button {
+    margin: auto;
     width: 90%;
     background-color: black;
-    color:white;
-  }
-  .carsDiv button:hover{
+    color: white;
+}
+.carsDiv button:hover {
     background-color: #333;
     color: white;
-  }
-  .carsDiv button:focus{
+}
+.carsDiv button:focus {
     background-color: black;
     color: white;
-  }
-  .carsDiv:hover img {
+}
+.carsDiv:hover img {
     -moz-transform: scale(1.02);
     -webkit-transform: scale(1.02);
     transform: scale(1.02);
-  }
+}
 
 /* Mobile View */
 
 @media only screen and (max-width: 768px) {
-
     .navbar-nav {
         width: 95%;
         margin-bottom: 15px;
     }
 
     /* Nav Mobile */
-    .navbar-inverse .navbar-nav>li>a {
+    .navbar-inverse .navbar-nav > li > a {
         color: white;
     }
 
-    .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
         color: white;
     }
 
@@ -311,7 +295,7 @@
         margin-top: 25px;
         margin-right: 35px;
     }
-    
+
     .servicios_options {
         width: 100%;
         margin: unset;
@@ -324,7 +308,6 @@
     .habitaciones_main_div_img {
         width: 100%;
     }
-
 }
 
 .skinny_font {
