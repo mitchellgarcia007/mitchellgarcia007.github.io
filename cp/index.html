@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/index.js"></script>
 </head>
 
 <body>
@@ -242,110 +243,36 @@
             </form>
         </div>
 
-        <!--<img src="http://www.mitchellgarcia.net/cp/img/book1.png" style="width:60%; display:block;margin:auto">-->
-
     </div>
     <!-- mainDiv Ends -->
 
     <!-- Footer Starts -->
-    <div class="veryBottom">
-        <div class="socialMedia">
-            <ul class="fa-ul">
-                <li><a href="https://www.facebook.com/MotelCesarsPalace/" target="_blank"><span aria-hidden="true"><i class="fa fa-facebook fa-2x"></i></span></a></li>
-                <li><a href="https://www.instagram.com/cesarspalace2018/" target="_blank"><span aria-hidden="true"><i class="fa fa-instagram fa-2x"></i></span></a></li>
-                <li><a href="https://twitter.com/cesarspalace2" target="_blank"><span aria-hidden="true"><i class="fa fa-twitter fa-2x"></i></span></a></li>
-                <li><a href="" target="_blank"><span aria-hidden="true"><i class="fa fa-linkedin fa-2x"></i></span></a></li>
-                <li><a href="" target="_blank"><span aria-hidden="true"><i class="fa fa-youtube fa-2x"></i></span></a></li>
-            </ul>
+    <div class="container-fluid text-center" style="background-color: black; color: white;">
+        <div class="row">
+            <!-- Left -->
+            <div class="col-sm-6" style="border-right: 1px solid #101010;">
+                <br>
+                <p>PREGUNTAS GENERALES DEL MOTEL <br> (661) 488 - 4427</p>
+                <p>EMAIL <br> ILCOLOSSEO@SOMETHING.COM</p>
+                <br>
+            </div>
+            <!-- Right -->
+            <div class="col-sm-6">
+                <div class="socialMedia">
+                    <p>CONECTATE CON NOSOTROS</p>
+                    <ul class="fa-ul">
+                        <li style="margin-left: -30px;"><a href="https://www.facebook.com/MotelCesarsPalace/" target="_blank"><span aria-hidden="true"><i class="fa fa-facebook fa-2x"></i></span></a></li>
+                        <li><a href="https://www.instagram.com/cesarspalace2018/" target="_blank"><span aria-hidden="true"><i class="fa fa-instagram fa-2x"></i></span></a></li>
+                        <li><a href="https://twitter.com/cesarspalace2" target="_blank"><span aria-hidden="true"><i class="fa fa-twitter fa-2x"></i></span></a></li>
+                        <li><a href="" target="_blank"><span aria-hidden="true"><i class="fa fa-linkedin fa-2x"></i></span></a></li>
+                        <li><a href="" target="_blank"><span aria-hidden="true"><i class="fa fa-youtube fa-2x"></i></span></a></li>
+                        <li><a href="" target="_blank"><span aria-hidden="true"><i class="fa fa-whatsapp fa-2x" style="color: #4CAF50;"></i></span></a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
     <!-- Footer Ends -->
-
-
-    <!-- reservacionesModal Modal Starts-->
-    <div id="reservacionesModal" style="text-align: center" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Reservaciones</h4>
-                </div>
-                <div class="modal-body">
-                    <form class="form-inline" action="">
-                        <div class="form-group text-left">
-                            <label for="sel1">Dia:</label><br>
-                            <select class="form-control" id="sel1" style="width:200px">
-                                <option>Agosto 15</option>
-                                <option>Agosto 16</option>
-                                <option>Agosto 17</option>
-                                <option>Agosto 18</option>
-                            </select>
-                        </div>
-
-                        <br><br>
-
-                        <div class="form-group text-left">
-                            <label for="sel1">Hora de Llegada:</label><br>
-                            <select class="form-control" id="sel1" style="width:200px">
-                                <option>1pm</option>
-                                <option>2pm</option>
-                                <option>3pm</option>
-                                <option>4pm</option>
-                            </select>
-                        </div>
-
-                        <br><br>
-
-                        <div class="form-group text-left">
-                            <label for="sel1">Hora de Salida:</label><br>
-                            <select class="form-control" id="sel1" style="width:200px">
-                                <option>1pm</option>
-                                <option>2pm</option>
-                                <option>3pm</option>
-                                <option>4pm</option>
-                            </select>
-                        </div>
-
-                    </form>
-                </div>
-                <div class="modal-footer" style="text-align: center">
-                    <button type="button" class="btn btn-default" style="background-color:#242323;color:white" data-dismiss="modal">Buscar Habitacion</button>
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <!-- reservacionesModal Modal Wnds-->
-
-    <script>
-        $('#myCarousel').carousel({
-            interval: 5000
-        })
-
-        $('.carousel .item').each(function () {
-            var next = $(this).next();
-            if (!next.length) {
-                next = $(this).siblings(':first');
-            }
-            next.children(':first-child').clone().appendTo($(this));
-
-            if (next.next().length > 0) {
-                next.next().children(':first-child').clone().appendTo($(this));
-            }
-            else {
-                $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
-            }
-        });
-
-        $(function () {
-            $("#nav-placeholder").load("nav.html");
-        });
-
-        $('#nav-placeholder').load('nav.html');
-    </script>
 
 </body>
 

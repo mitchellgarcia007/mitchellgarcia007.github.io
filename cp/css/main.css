@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden;
+}
+
 #mainDiv {
     height: auto;
     margin-bottom: 0px;
