@@ -44,6 +44,17 @@ body {
     border-color: white;
 }
 
+/* Nav Desktop */
+.navbar-inverse .navbar-nav > li > a {
+    color: white;
+}
+.navbar-inverse .navbar-nav > li > a:hover {
+    color: #9d9d9d;
+}
+.navbar-inverse {
+    background-color: #000000;
+}
+
 .container-fluid {
     padding-right: unset;
     padding-left: unset;
@@ -192,15 +203,11 @@ body {
     margin: auto;
 }
 
-/* Nav Desktop */
-.navbar-inverse .navbar-nav > li > a {
+/* FOOTER */
+.footer_div {
+    background-color: black;
     color: white;
-}
-.navbar-inverse .navbar-nav > li > a:hover {
-    color: #9d9d9d;
-}
-.navbar-inverse {
-    background-color: #000000;
+    margin-top: 150px;
 }
 
 /* INVENTORY */
@@ -253,8 +260,12 @@ body {
     margin-top: 135px;
 }
 
-/* Mobile View */
+.comodidades_icons_div {
+    width: fit-content;
+    margin: auto;
+}
 
+/* Mobile View */
 @media only screen and (max-width: 768px) {
     .navbar-nav {
         width: 95%;
